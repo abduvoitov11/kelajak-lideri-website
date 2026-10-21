@@ -1,0 +1,16 @@
+{
+  "name": "kelajak-lideri-website",
+  "version": "1.0.0",
+  "description": "Kelajak Lideri — Anvarov Sherozbek Taqdimot Sayti (Liquid Glass)",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "kelajak-lideri",
+    "sherozbek",
+    "presentation",
+    "vercel"
+  ],
+  "author": "Anvarov Sherozbek",
+  "license": "MIT"
+}
