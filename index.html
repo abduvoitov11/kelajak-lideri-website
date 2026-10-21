@@ -74,25 +74,24 @@
       position: fixed;
       inset: 0;
       z-index: -20;
-      background: linear-gradient(180deg, rgba(6, 9, 19, 0.52) 0%, rgba(6, 9, 19, 0.65) 50%, rgba(6, 9, 19, 0.82) 100%);
-      backdrop-filter: blur(1.5px);
-      -webkit-backdrop-filter: blur(1.5px);
+      background: linear-gradient(180deg, rgba(6, 9, 19, 0.18) 0%, rgba(6, 9, 19, 0.32) 50%, rgba(6, 9, 19, 0.5) 100%);
+      pointer-events: none;
     }
 
     /* Ultra-Transparent Pure Crystal Glass Buttons */
     .liquid-btn {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(16px) saturate(200%) contrast(105%);
-      -webkit-backdrop-filter: blur(16px) saturate(200%) contrast(105%);
-      border: 1px solid rgba(255, 255, 255, 0.38);
-      box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.7), 
-                  inset 0 -1px 1px 0 rgba(255, 255, 255, 0.15), 
-                  0 8px 32px 0 rgba(0, 0, 0, 0.35);
+      background: rgba(255, 255, 255, 0.05) !important;
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.45) !important;
+      box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.75), 
+                  inset 0 -1px 1px 0 rgba(255, 255, 255, 0.2), 
+                  0 8px 24px 0 rgba(0, 0, 0, 0.3);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
-      color: #ffffff;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+      color: #ffffff !important;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     }
     .liquid-btn::before {
       content: '';
@@ -108,12 +107,11 @@
       left: 100%;
     }
     .liquid-btn:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.85) !important;
       transform: translateY(-2px);
       box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.95), 
-                  inset 0 -1px 1px 0 rgba(255, 255, 255, 0.3), 
-                  0 16px 40px -6px rgba(0, 0, 0, 0.5);
+                  0 12px 30px -4px rgba(0, 0, 0, 0.4);
     }
     .liquid-btn:active {
       transform: scale(0.96);
@@ -121,19 +119,17 @@
 
     /* Ultra-Transparent Tinted Crystal Gold Glass */
     .liquid-btn-gold {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.22) 0%, rgba(245, 158, 11, 0.05) 50%, rgba(217, 119, 6, 0.15) 100%);
-      backdrop-filter: blur(16px) saturate(210%) contrast(105%);
-      -webkit-backdrop-filter: blur(16px) saturate(210%) contrast(105%);
-      border: 1px solid rgba(251, 191, 36, 0.75);
-      box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.95), 
-                  inset 0 -1px 1px 0 rgba(245, 158, 11, 0.4), 
-                  0 8px 32px 0 rgba(0, 0, 0, 0.4),
-                  0 0 22px -4px rgba(245, 158, 11, 0.35);
+      background: rgba(245, 158, 11, 0.1) !important;
+      backdrop-filter: blur(12px) saturate(190%);
+      -webkit-backdrop-filter: blur(12px) saturate(190%);
+      border: 1.5px solid rgba(251, 191, 36, 0.8) !important;
+      box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.85), 
+                  0 8px 24px 0 rgba(245, 158, 11, 0.25);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
-      color: #ffffff;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+      color: #ffffff !important;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
     }
     .liquid-btn-gold::before {
       content: '';
@@ -149,12 +145,11 @@
       left: 100%;
     }
     .liquid-btn-gold:hover {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.32) 0%, rgba(245, 158, 11, 0.1) 50%, rgba(217, 119, 6, 0.22) 100%);
-      border-color: rgba(253, 230, 138, 0.95);
+      background: rgba(245, 158, 11, 0.22) !important;
+      border-color: rgba(253, 230, 138, 0.95) !important;
       transform: translateY(-2px);
       box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 1), 
-                  0 16px 40px -6px rgba(245, 158, 11, 0.45),
-                  0 0 28px 0 rgba(245, 158, 11, 0.4);
+                  0 12px 32px 0 rgba(245, 158, 11, 0.4);
     }
     .liquid-btn-gold:active {
       transform: scale(0.96);
@@ -162,20 +157,20 @@
 
     /* Ultra-Transparent Glass Cards */
     .liquid-card {
-      background: rgba(8, 14, 30, 0.42);
-      backdrop-filter: blur(18px) saturate(190%);
-      -webkit-backdrop-filter: blur(18px) saturate(190%);
+      background: rgba(8, 14, 30, 0.35);
+      backdrop-filter: blur(14px) saturate(170%);
+      -webkit-backdrop-filter: blur(14px) saturate(170%);
       border: 1px solid rgba(255, 255, 255, 0.22);
-      box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.28), 
-                  0 14px 38px -10px rgba(0, 0, 0, 0.7);
+      box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.3), 
+                  0 14px 38px -10px rgba(0, 0, 0, 0.6);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .liquid-card:hover {
       transform: translateY(-4px) scale(1.01);
       border-color: rgba(255, 255, 255, 0.45);
       box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.5), 
-                  0 22px 48px -10px rgba(0, 0, 0, 0.8);
-      background: rgba(12, 20, 42, 0.55);
+                  0 22px 48px -10px rgba(0, 0, 0, 0.7);
+      background: rgba(12, 20, 42, 0.48);
     }
 
     /* Presentation Mode */
@@ -237,17 +232,14 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      opacity: 0.38;
-      filter: contrast(110%) brightness(0.92);
-      transform: scale(1.02);
+      opacity: 0.92;
     }
     body.scroll-mode .slide-section::after {
       content: '';
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: radial-gradient(circle at center, rgba(6, 9, 19, 0.4) 0%, rgba(6, 9, 19, 0.8) 100%),
-                  linear-gradient(180deg, rgba(6, 9, 19, 0.65) 0%, rgba(6, 9, 19, 0.85) 100%);
+      background: linear-gradient(180deg, rgba(6, 9, 19, 0.18) 0%, rgba(6, 9, 19, 0.36) 100%);
       pointer-events: none;
     }
 
@@ -292,10 +284,10 @@
   <div class="fixed -bottom-40 right-10 w-[35rem] h-[35rem] bg-cyan-500/10 rounded-full pointer-events-none -z-10 blur-3xl"></div>
 
   <!-- ================= TOP NAVIGATION BAR ================= -->
-  <header class="fixed top-0 inset-x-0 h-16 bg-[#060913]/45 backdrop-blur-2xl border-b border-white/20 z-40 px-3 md:px-8 flex items-center justify-between">
+  <header class="fixed top-0 inset-x-0 h-16 bg-[#060913]/25 backdrop-blur-xl border-b border-white/15 z-40 px-3 md:px-8 flex items-center justify-between">
     <!-- Brand -->
     <div class="flex items-center gap-2.5 sm:gap-3">
-      <div class="relative flex items-center justify-center w-10 h-10 rounded-2xl liquid-btn-gold text-black font-black text-xl shadow-lg shadow-amber-500/30">
+      <div class="relative flex items-center justify-center w-10 h-10 rounded-2xl liquid-btn-gold text-white font-black text-xl shadow-lg shadow-amber-500/30">
         👑
       </div>
       <div>
@@ -393,7 +385,7 @@
 
         <!-- Action Buttons (Liquid Glass Primary & Secondary) -->
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <button onclick="nextSlide()" class="liquid-btn-gold px-8 py-3.5 rounded-2xl text-slate-950 font-black text-sm flex items-center gap-2">
+          <button onclick="nextSlide()" class="liquid-btn-gold px-8 py-3.5 rounded-2xl text-amber-100 font-black text-sm flex items-center gap-2">
             <span>Taqdimotni boshlash</span>
             <span>→</span>
           </button>
@@ -750,7 +742,7 @@
   </main>
 
   <!-- ================= BOTTOM PRESENTATION BAR (Liquid Glass) ================= -->
-  <footer class="fixed bottom-0 inset-x-0 h-16 bg-[#060913]/45 backdrop-blur-2xl border-t border-white/20 z-40 px-4 md:px-8 flex items-center justify-between presentation-controls">
+  <footer class="fixed bottom-0 inset-x-0 h-16 bg-[#060913]/25 backdrop-blur-xl border-t border-white/15 z-40 px-4 md:px-8 flex items-center justify-between presentation-controls">
     <div class="flex items-center gap-3">
       <span id="slideIndicator" class="text-xs font-extrabold px-3.5 py-1.5 rounded-full liquid-btn text-amber-300 border border-amber-400/40">
         1 / 6-slayd
@@ -765,7 +757,7 @@
 
       <div id="dotsContainer" class="hidden sm:flex items-center gap-1.5 px-2"></div>
 
-      <button id="nextBtn" onclick="nextSlide()" class="liquid-btn-gold px-5 py-2 rounded-xl text-slate-950 text-xs font-extrabold flex items-center gap-1">
+      <button id="nextBtn" onclick="nextSlide()" class="liquid-btn-gold px-5 py-2 rounded-xl text-amber-100 text-xs font-extrabold flex items-center gap-1">
         Keyingi <span>→</span>
       </button>
     </div>
